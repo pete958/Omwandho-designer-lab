@@ -1,0 +1,160 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Peter Omwandho – 3D Graphic Designer</title><!-- Google Font --><link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet"><style>
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: linear-gradient(135deg,#0f0f0f,#1a1a1a);
+  color: white;
+  overflow-x: hidden;
+}
+
+header {
+  text-align: center;
+  padding: 80px 20px;
+  background: radial-gradient(circle,#111,#000);
+}
+
+header h1 {
+  font-size: 3em;
+  color: #00ffe1;
+  text-shadow: 0 0 20px #00ffe1;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 10px #00ffe1; }
+  to { text-shadow: 0 0 30px #00ffe1; }
+}
+
+.logo {
+  width: 160px;
+  margin-top: 20px;
+  animation: spin 8s linear infinite;
+  transform-style: preserve-3d;
+}
+
+@keyframes spin {
+  from { transform: rotateY(0deg); }
+  to { transform: rotateY(360deg); }
+}
+
+.section {
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #00ffe1;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  perspective: 1000px;
+}
+
+.card {
+  background: linear-gradient(145deg,#1e1e1e,#111);
+  border-radius: 25px;
+  padding: 25px;
+  width: 240px;
+  min-height: 220px;
+  box-shadow: 0 15px 40px rgba(0,255,225,0.3);
+  transition: transform 0.6s ease, box-shadow 0.6s ease;
+  transform-style: preserve-3d;
+}
+
+.card:hover {
+  transform: rotateY(15deg) rotateX(10deg) scale(1.1);
+  box-shadow: 0 25px 60px rgba(0,255,225,0.6);
+}
+
+.card p {
+  font-size: 0.9em;
+  line-height: 1.5em;
+}
+
+img.certificate {
+  width: 320px;
+  margin-top: 20px;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0,255,225,0.5);
+  transition: transform 0.6s ease;
+}
+
+img.certificate:hover {
+  transform: rotateY(15deg) scale(1.1);
+}
+
+footer {
+  text-align: center;
+  padding: 40px;
+  background: #000;
+  color: #00ffe1;
+}
+
+button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 30px;
+  background: #00ffe1;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: white;
+  transform: scale(1.1);
+}
+
+</style></head><body><header>
+  <h1>Peter Omwandho – 3D Graphic Designer</h1>
+  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAA" class="logo" alt="Logo">
+</header><section class="section">
+  <h2>About Me</h2>
+  <p>I am Peter Omwandho, a professional graphic designer specializing in 3D animated visuals, branding, and digital creativity. I transform ideas into powerful visual experiences that elevate businesses globally.</p>
+  <div class="cards">
+    <div class="card"><h3>Creative Innovation</h3><p>Modern, bold, and attention-grabbing design concepts.</p></div>
+    <div class="card"><h3>Brand Identity</h3><p>Logos, color systems, typography and full branding strategy.</p></div>
+    <div class="card"><h3>3D Animation</h3><p>Advanced motion graphics and interactive 3D effects.</p></div>
+  </div>
+</section><section class="section">
+  <h2>Design Tools & Functions</h2>
+  <div class="cards">
+    <div class="card"><h3>Photoshop</h3><p>Professional image manipulation and photo editing.</p></div>
+    <div class="card"><h3>Canva</h3><p>Creative layout design and marketing materials.</p></div>
+    <div class="card"><h3>PixelLab</h3><p>Mobile typography and social media graphic creation.</p></div>
+    <div class="card"><h3>Blender</h3><p>3D modeling, rendering and animation production.</p></div>
+    <div class="card"><h3>ChatGPT</h3><p>AI-powered creative concepts and content enhancement.</p></div>
+  </div>
+</section><section class="section">
+  <h2>Global Testimonials</h2>
+  <div class="cards">
+    <div class="card"><p>🇺🇸 "Outstanding 3D logo design!" – Michael, USA</p></div>
+    <div class="card"><p>🇰🇪 "Best designer in Kenya!" – Brian, Kenya</p></div>
+    <div class="card"><p>🇮🇳 "Very professional and fast." – Arjun, India</p></div>
+    <div class="card"><p>🇨🇳 "High quality branding work." – Li Wei, China</p></div>
+    <div class="card"><p>🌍 "Exceptional creativity in Africa." – Daniel, South Africa</p></div>
+  </div>
+</section><section class="section">
+  <h2>Government License Certificate</h2>
+  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAA" class="certificate" alt="Certificate">
+</section><section class="section">
+  <h2>Contact Me</h2>
+  <p>Email: peter.omwandho@example.com</p>
+  <p>Phone: +254 700 000000</p>
+  <p>WhatsApp: +254 700 000000</p>
+  <button onclick="alert('Thank you for contacting Peter Omwandho!')">Hire Me</button>
+</section><footer>
+  © 2026 Peter Omwandho | 3D Animated Portfolio Website
+</footer></body>
+</html>
